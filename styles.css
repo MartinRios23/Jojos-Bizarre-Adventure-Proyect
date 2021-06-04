@@ -1,6 +1,6 @@
 /*General*/
 *{
-    font-family: "Montserrat";
+    font-family: "Montserrat" !important;
     padding: 0px;
     margin: 0px;
 }
@@ -44,7 +44,7 @@ ul, li{
 
 #navbar >ul{
     margin: 0px 220px auto;
-    width: 1200px;
+    width: 83%;
 }
 
 #navbar > ul > li{
@@ -76,7 +76,8 @@ ul, li{
 
 /*Contenedor general*/
 .generalContainer{
-    width: 1250px;
+    display: flex;
+    max-width: 1440px;
     min-height: 1100px;
     margin: 0px auto;
     background-color: purple;
@@ -84,7 +85,7 @@ ul, li{
 
 /*Sidebar*/
 #sidebar{
-    width: 400px;
+    width: 25%;
     max-height: 600px;
     margin: 30px;
     background-color: #ccc;
@@ -116,7 +117,7 @@ ul, li{
     border: 1px solid white;
     display: block;
     float: right;
-    width: 900px;
+    width: 66%;
     height: 200px;
     margin-top: 30px;
     padding: 20px;
@@ -147,11 +148,11 @@ ul, li{
 #contenedorSlider{
     background-color: #ccc;
     position: absolute;
-    border: 3px solid yellow;
-    width: 450px;
-    height: 330px;
+    box-shadow: 0px 0px 4px rgb(255, 6, 180);
+    width: 31%;
+    height: 335px;
     top: 350px;
-    left: 35px;
+    left: 25px;
 
 }
 
@@ -166,7 +167,7 @@ ul.slider li{
 
 ul.slider li img{
     width: 100%;
-    height: 330px;
+    height: 335px;
     object-fit: cover;
 }
 
@@ -185,12 +186,14 @@ ul.menuSlider{
     text-align: right;
     margin: 20px;
     position: absolute;
-    top: 268px;
+    top: 255px;
     left: -20px;
+    height: 60px;
+    display: block;
 }
 
 ul.menuSlider:hover{
-    background-color: #ccc;
+    background-color: rgba(0, 0, 0, 0.6);
     opacity: 1;
     transition: 1s;
 }
@@ -201,14 +204,42 @@ ul.menuSlider li{
 }
 
 ul.menuSlider li a{
-
     display: inline-block;
-    color: orange;
+    color: #ccc;
     text-decoration: none;
-    background-color: grey;
+    background-color: rgb(58, 58, 58);
     padding: 10px;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     font-size: 20px;
     border-radius: 100%;
+    margin-top: 10px;
+}
+
+
+/*Novedades*/
+#contenedorNovedades{
+    background-color: #ccc;
+    position: absolute;
+    box-shadow: 0px 0px 4px rgb(255, 6, 180);
+    width: 36%;
+    height: 335px;
+    top: 350px;
+    left: 500px;
+}
+
+#contenedorNovedades h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+
+#contenedorNovedades ul{
+    margin: 7px auto;
+    margin-left: 30px;
+}
+
+#contenedorNovedades ul li{
+    list-style: square;
+    margin: 6px;
 }
