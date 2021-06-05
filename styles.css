@@ -11,7 +11,7 @@
 }
 
 body{
-    background-color: rgb(58, 0, 112);
+    background-color: rgb(183, 122, 240);
     max-height: 1600px;
 }
 
@@ -90,7 +90,6 @@ ul, li{
     margin: 30px;
     background-color: #ccc;
     float: right;
-    border: 1px solid black;
     box-shadow: 0px 0px 8px rgb(255, 6, 180);
     overflow: auto;
 
@@ -114,13 +113,12 @@ ul, li{
 /*Contenido Central*/
 #centralContent #content{
     background-color: rgb(255, 152, 250);
-    border: 1px solid white;
     display: block;
     float: right;
     width: 66%;
     height: 200px;
     margin-top: 30px;
-    padding: 20px;
+    padding: 23px;
     box-shadow: 0px 0px 8px rgb(255, 6, 180);
 
 }
@@ -157,30 +155,30 @@ ul, li{
 }
 
 
-ul.slider li{
+div.slider div{
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
-    transition: opacity 1s;
+    transition: all 1s;
 }
 
-ul.slider li img{
+div.slider div img{
     width: 100%;
     height: 335px;
     object-fit: cover;
 }
 
 
-ul.slider li:first-child{
-    opacity: 0;
-}
-
-ul.slider li:target{
+div.slider div:first-child{
     opacity: 1;
 }
 
-ul.menuSlider{
+div.slider div:target{
+    opacity: 1;
+}
+
+div.menuSlider{
     width: 100%;
     opacity: 0;
     text-align: right;
@@ -192,18 +190,18 @@ ul.menuSlider{
     display: block;
 }
 
-ul.menuSlider:hover{
+div.menuSlider:hover{
     background-color: rgba(0, 0, 0, 0.6);
     opacity: 1;
     transition: 1s;
 }
 
-ul.menuSlider li{
+div.menuSlider div{
     display: inline-block;
     text-align: center;
 }
 
-ul.menuSlider li a{
+div.menuSlider div a{
     display: inline-block;
     color: #ccc;
     text-decoration: none;
@@ -217,11 +215,20 @@ ul.menuSlider li a{
 }
 
 
+/*Info de slider*/
+div.menuSlider .info p{
+    color: white;
+    display: inline-block;
+}
+
+
+
+
 /*Novedades*/
 #contenedorNovedades{
     background-color: #ccc;
     position: absolute;
-    box-shadow: 0px 0px 4px rgb(255, 6, 180);
+    box-shadow: 0px 0px 8px rgb(255, 6, 180);
     width: 36%;
     height: 335px;
     top: 350px;
@@ -242,4 +249,26 @@ ul.menuSlider li a{
 #contenedorNovedades ul li{
     list-style: square;
     margin: 6px;
+}
+
+
+/*Footer*/
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.527);
+    padding-top: 1px;
+    padding-bottom: 1px;
+    color: white;
+    font-size: 13px;
+}
+
+.footer a{
+    color:rgb(255, 6, 180);
+}
+
+.footer a:hover{
+    text-shadow: 0px 0px 3px rgb(255, 6, 180);
 }
