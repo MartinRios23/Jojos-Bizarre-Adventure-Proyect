@@ -60,8 +60,8 @@ ul, li{
 #navbar a{
     width: fit-content;
     display: block;
-    padding-right: 45px;
-    padding-left: 45px;
+    padding-right: 40px;
+    padding-left: 40px;
     text-decoration: none;
     color: white;
     font-weight: 300;
@@ -236,13 +236,15 @@ div.menuSlider .info p{
 }
 
 #contenedorNovedades h2{
+    letter-spacing: 1px;
+    margin-top: 5px;
     text-align: center;
     font-size: 30px;
 }
 
 
 #contenedorNovedades ul{
-    margin: 7px auto;
+    margin: 10px auto;
     margin-left: 30px;
 }
 
